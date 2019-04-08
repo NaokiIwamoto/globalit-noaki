@@ -1,0 +1,24 @@
+body{
+    font-size: 14px;
+    color: darkblue;
+    background-color: rgb(28,45,53)
+}
+p{
+    color: red;
+}
+#para1{
+    color: blueviolet;
+}
+.small{
+    color: tomato;
+}
+h1{
+    color: yellow;
+    background-color: #b52626;
+}
+h2{
+    color: #00bfff;
+}
+h3{
+    color:#009;
+}

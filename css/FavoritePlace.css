@@ -1,0 +1,9 @@
+.place{
+    float: left;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    margin: 10px;
+    font-family:fantasy;
+}
+h3, p {
+    margin-left: 10px;
+}

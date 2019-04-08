@@ -1,0 +1,70 @@
+.class1{
+    width: 700px;
+    height: 600px;
+    background-color: #ccdbc9;
+}
+.insideclass1{
+    width: 100px;
+    height: 200px;
+    background-color: rgb(12, 95, 99);
+}
+.outside{
+    width: 100px;
+    height: 200px;
+    background-color: yellow;
+}
+.favorite_color{
+    color: red;
+    font-family: fantasy;
+}
+.profile{
+    background-color: beige;
+}
+body{
+    font-family: Cambria;
+}
+h1{
+    font-family: Impact;
+    font-style: italic;
+    text-transform: uppercase;
+}
+p{ 
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    font-size: 2em;
+    text-transform: lowercase;
+}
+h2{
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: line-through;
+    text-align: left;
+    margin: 20px;
+    padding: 40px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: grey;
+}
+div{
+    margin: auto;
+}
+ul{
+    list-style-type: disc;
+    color: gold;
+}
+.link{
+    text-align: left;
+}
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+table{
+    margin: 50px;
+}
+td, th{
+    text-align: center;
+}
