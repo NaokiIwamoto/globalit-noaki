@@ -296,8 +296,42 @@
     }else{
         echo "This is not number.";
         }
-    
-  
+
+    echo "<br>";
+    $x = 1;
+
+    echo "<br>";
+    while($x <= 7){
+        echo "The number is: $x <br>";
+        $x++;
+    }
+    echo "<br>";
+    $y = 1;
+
+    do{
+        echo "The number is: $y <br>";
+        $y++;
+    }while ($y <= 7);
+
+
+    echo "<br>";
+    for ($z = 0; $z <= 7; $z++){
+        echo "The number is: $z <br>";
+    }
+
+    echo "<br>";
+    $colors = array("red", "green", "blue", "yellow");
+    foreach ($colors as $value) {
+        echo "$value <br>";
+    }
+
+    for ($a = 1; $a <= 10; $a++){
+        if($a <= 9){
+            echo "$a-";
+        }else{
+            echo "$a";
+        }
+    }
     ?>  
     
 
