@@ -270,12 +270,10 @@
         echo "Your food is $favfood!";
     }
     echo "<br>";
-    $input_1 = "fdsa";
-    $input_2 = 5;
-    $operator = "multiply";
-    if(is_string($input_1) || is_string($input_2)){
-        echo "What's that??";
-    }else{
+    $input_1 = 5.1;
+    $input_2 = -5;
+    $operator = "add";
+    if(is_numeric($input_1) && is_numeric($input_2)){
         switch($operator){
             case "add":
             $add = $input_1 + $input_2;
@@ -293,9 +291,11 @@
             $divide = $input_1 / $input_2;
             echo "Result is  $divide";
             default:
-            echo "What's that??";
-        }
+            echo "This is not operator.";
     }
+    }else{
+        echo "This is not number.";
+        }
     
   
     ?>  
