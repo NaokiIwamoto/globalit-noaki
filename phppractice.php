@@ -251,8 +251,8 @@
     }
     
     echo "<br>";
-    
-    $favfood = "123";
+
+    $favfood = 123;
     switch ($favfood){
         case "sushi":
         echo "Healthy and GOOD";
@@ -267,8 +267,36 @@
         echo "Is it food";
         break;
         default:
-        echo "Your food is <other input>!";
+        echo "Your food is $favfood!";
     }
+    echo "<br>";
+    $input_1 = "fdsa";
+    $input_2 = 5;
+    $operator = "multiply";
+    if(is_string($input_1) || is_string($input_2)){
+        echo "What's that??";
+    }else{
+        switch($operator){
+            case "add":
+            $add = $input_1 + $input_2;
+            echo "Result is  $add";
+            break;
+            case "minus":
+            $minus = $input_1 - $input_2;
+            echo "Result is  $minus";
+            break;
+            case "multiply":
+            $multiply = $input_1 * $input_2;
+            echo "Result is  $multiply";
+            break;
+            case "divide":
+            $divide = $input_1 / $input_2;
+            echo "Result is  $divide";
+            default:
+            echo "What's that??";
+        }
+    }
+    
   
     ?>  
     
