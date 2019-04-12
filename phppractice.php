@@ -195,6 +195,81 @@
     if ($input1 == $input2){
         echo "IT IS THE SAME";
     }
+
+    echo "<br>";
+    $number = "53";
+    if ($number == 3){
+        echo "The number is 3";
+    }else{
+        echo "The numver is $number it is not 3";
+    }
+
+    echo "<br>";
+    $age = 30;
+    if ($age > 30){
+        echo "YOU ARE OLD !!!";
+    }else{
+        echo "YOU ARE NOT YET OLD !";
+    }
+
+    echo "<br>";
+    if ($number == 3){
+        echo "The number is 3";
+    } elseif ( $number == 123 ){
+        echo "The number is 123";
+    } else {
+        echo "The numver is $number it is not 3 or 123";
+    }
+    echo "<br>";
+
+    $score = "ioooo";
+    if (is_string($score)){
+        echo "What's that.";
+    }elseif ($score >= 80 && $score <= 100){
+        echo "Your grade is $score. it is Excellent!";
+    }elseif  ($score >= 70 && $score < 80){
+        echo "Your grade is $score. it is Very Good!";
+    }elseif ($score >= 60 && $score < 70){
+        echo "Your grade is $score. it is Good.";
+    }elseif ($score >= 0 && $score < 60){
+        echo "Your grade is $score. it is Failure";
+    }
+
+    $favcolor = "pink";
+    switch ($favcolor){
+        case "red":
+        echo "Your favorite color is red!";
+        break;
+        case "blue":
+        echo "Your favorite color is blue!";
+        break;
+        case "green":
+        echo "Your favorite color is green!";
+        break;
+        default:
+        echo "your favorite color is neither red, blue, nor green!";
+    }
+    
+    echo "<br>";
+    
+    $favfood = "123";
+    switch ($favfood){
+        case "sushi":
+        echo "Healthy and GOOD";
+        break;
+        case "french fries":
+        echo "Oily but Yummy!";
+        break;
+        case "salad":
+        echo "No comment :D";
+        break;
+        case "nori":
+        echo "Is it food";
+        break;
+        default:
+        echo "Your food is <other input>!";
+    }
+  
     ?>  
     
 
