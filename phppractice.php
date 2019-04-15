@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
 </head>
 <body>
     <h1>My first PHP page</h1>
@@ -332,8 +342,107 @@
             echo "$a";
         }
     }
-    ?>  
+    ?>
+
+
+<table>
+    <tr>
+        <th>Number</th>
+        <th>Discription</th>
+    </tr>
+    <?php 
+        for ($b = 1; $b <= 4; $b++){
+            echo "<tr>";
+            echo "<th>$b</th>";
+            echo "<td>This is Data $b</td>";
+            echo "</tr>";
+        }
+
+
+    ?>
+</table>
+
+<?php
+    for ($ast_1 = 1; $ast_1 <= 5; $ast_1++){
+        for ($ast_2 = 1; $ast_2 <= $ast_1 ; $ast_2++){
+            echo "*";
+        }
+        echo "<br>";
+    }
+
+    function helloMsg(){
+        echo "Hello world!";
+    }
+
+    helloMsg();
+
+    echo "<br>";
+    function famname($firstname, $year){
+        echo "$firstname Iwamoto. Born in $year. <br>";
+    }
+
+    famname("Naoki", "1994");
+    famname("Kazushi", "1992");
+
+    function sum($x,$y){
+        $z = $x + $y;
+        return $z;
+    }
+
+    echo "5 + 10 = " . sum(5,10). "<br>";
+    echo "6 + 12 = " . sum(6,12). "<br>";
+    echo "3 + 2 = " . sum(3,2). "<br>";
+
+
+
+    function myCheck(){
+        $x_1 = 10;
+        echo "Variable x inside function is : $x_1";
+    }
+    myCheck();
+
+    echo "Variable x outside function is : $x_1";
+    echo "<br>";
+    $x_2 = 10;
+
+    function my_Check(){
+        global $x_2;
+        echo "Variable x inside function is : $x_2";
+    }
+    my_Check();
+    echo "<br>";
+    echo "Variable x outside function is : $x_2";
+
+    echo "<br>";    
+    $cars = array("Toyota","Nissan","Honda");
+    sort($cars);
+    echo count($cars);
+
     
+    echo "<br>";  
+    $arrlength = count($cars);
+    for ($x = 0; $x < $arrlength; $x++ ){
+        echo $cars[$x];
+        echo "<br>";
+    }
+
+    $_num = array("10","17","22","2","7","1","11");
+    echo "<br>";  
+    $arrlength = count($_num);
+    sort($_num);
+    for ($x = 0; $x < $arrlength; $x++ ){
+        echo $_num[$x];
+        echo "<br>";
+    }
+    echo "<br>"; 
+    rsort($_num);
+    for ($x = 0; $x < $arrlength; $x++ ){
+        echo $_num[$x];
+        echo "<br>";
+    }
+
+
+?>
 
 </body>
 </html>
